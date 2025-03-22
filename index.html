@@ -1,55 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VLC media player</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <div class="title-bar">
-            <img class='logo' src="vlc logo.jpg" alt="">
-            <h1 class="title">VLC media player</h1>
-
+      <div class="title-bar">
+        <img class="logo" src="vlc logo.jpg" alt="" />
+        <h1 class="title">VLC media player</h1>
+      </div>
+      <div class="menu-bar">
+        <div class="menu">
+          <div class="menu-btn" id="openfile">Open</div>
+          <input type="file" name="videos" id="videoinput" />
         </div>
-        <div class="menu-bar">
-            <div class="menu">
-                <div class="menu-btn" id="openfile">Open</div>
-                <input type="file" name="videos" id="videoinput">
-
-            </div>
-            <div class="menu">
-                <div class="menu-btn">Playback</div>
-                <ul class="menu-item">
-                    <li id="speedUp">Speed Up</li>
-                    <li id="speedDown">Speed Down</li>
-                </ul>
-            </div>
-            <div class="menu">
-                <div class="menu-btn">Audio</div>
-                <ul class="menu-item">
-                    <li>Volume UP</li>
-                    <li>Volume Down</li>
-                </ul>
-
-            </div>
+        <div class="menu">
+          <div class="menu-btn">Playback</div>
+          <ul class="menu-item">
+            <li id="speedUp">Speed Up</li>
+            <li id="speedDown">Speed Down</li>
+          </ul>
         </div>
+        <div class="menu">
+          <div class="menu-btn">Audio</div>
+          <ul class="menu-item">
+            <li id="volume-up">Volume UP</li>
+            <li id="volume-down">Volume Down</li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main id="main">
-       
+        <div id="volumeToast"></div>
     </main>
     <footer>
-        <div id="controls">
-            <button id="play">Play</button>
-            <button id="pause">Pause</button>
-            <div id="playbackBox"></div>
+      <div id="controls">
+        <i class="fa-solid fa-play" id="play"></i>
+        <i class="fa-solid fa-pause" id="pause"></i>
+        <span id="current-time">00:00:00</span>/<span id="total-time">00:00:00</span>
+        <input type="range" name="seek-bar" id="seek-bar" value="0" max="100" step="0.1"/>
+        <i class="fa-solid fa-expand" id="fullScreen"></i>
+        <!-- <i class="fa-solid fa-volume-xmark"></i> -->
+        <i class="fa-solid fa-volume-high"></i>
 
-        </div>
+        <div id="playbackBox"></div>
 
+      </div>
     </footer>
     <script src="script.js"></script>
-    
-</body>
+  </body>
 </html>

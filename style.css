@@ -26,47 +26,43 @@ header {
   height: 50%;
   align-items: center;
 }
-.menu{
-    position: relative;
-    /* border: 2px solid; */
-    padding-bottom:12px;
+.menu {
+  position: relative;
+  /* border: 2px solid; */
+  padding-bottom: 12px;
 }
 
-
-.menu:hover .menu-item{
+.menu:hover .menu-item {
   display: block;
-
 }
 
-.menu-item{
-    background-color:#f9f7f7;
-    position:absolute;
-    top:31px;
-    z-index: 1;
-    width:6.5rem;
-    display: none;
-    cursor:pointer;
-
+.menu-item {
+  background-color: #f9f7f7;
+  position: absolute;
+  top: 31px;
+  z-index: 1;
+  width: 6.5rem;
+  display: none;
+  cursor: pointer;
 }
-li{
+li {
   padding: 0.25rem;
 }
-li:hover{
+li:hover {
   background-color: grey;
 }
-.menu-btn{
-  padding:2px;
+.menu-btn {
+  padding: 2px;
   border-radius: 4px;
 }
-.menu-btn:hover{
+.menu-btn:hover {
   background-color: rgb(201, 197, 197);
-  cursor:pointer;
+  cursor: pointer;
 }
 
-#videoinput{
+#videoinput {
   display: none;
 }
-
 
 /* main content */
 main {
@@ -75,16 +71,21 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
-.video{
+.video {
   height: 100%;
   /* border: 10px solid red; */
 }
 
-
-
-
+#volumeToast{
+  background-color: rgb(211, 203, 203);
+  color: black;
+  width: 3.7rem;
+  height: 3rem;
+  font-size: 1.8rem;;
+  display:none;
+  position:absolute;
+}
 /******Footer*****/
 footer {
   height: 4rem;
@@ -94,17 +95,22 @@ footer {
   padding: 0.5rem;
 }
 
-#controls{
+#controls {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
-  gap:5px; 
+  gap: 5px;
 }
 
-#playbackBox{
+#playbackBox {
   font-size: 1rem;
-  width:2.3rem;
+  width: 2.3rem;
   height: 1.3rem;
-  border:2px solid ;
+  border: 2px solid;
 }
+#seek-bar{
+  width:95%;
+
+}
+
