@@ -143,6 +143,19 @@ const volumeToastHandler = ()=>{
     },4000);
 }
 
+//keyboard event for volume up and volume down
+
+document.addEventListener("keydown",(event)=>{
+  if(event.key==="ArrowUp"){
+      console.log('arrow up pressed');
+      volumeUpHandler();
+
+  }
+  else if(event.key==="ArrowDown"){
+      volumeDownHandler();
+  }
+})
+
 /* play pause button toggle and hanler */
 
 
