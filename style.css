@@ -111,6 +111,24 @@ footer {
 }
 #seek-bar{
   width:95%;
-
+  cursor: pointer;
 }
 
+/* Added styles for play/pause toggle */
+#pause {
+  display: none;
+}
+
+/* Added styles for volume icons */
+#volume-icon, #mute-icon {
+  cursor: pointer;
+}
+
+#mute-icon {
+  display: none;
+}
+
+/* Added styles for time display */
+#current-time, #total-time {
+  font-family: monospace;
+}
